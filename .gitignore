@@ -1,2 +1,6 @@
+# https://stackoverflow.com/questions/29820791/git-ignore-node-modules-folder-everywhere
+# 
+# Used this "universal one liner" then added the next folder as well
+# touch .gitignore && echo "node_modules/" >> .gitignore && git rm -r --cached node_modules ; git status
 node_modules/
 .next/
