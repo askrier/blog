@@ -1,68 +1,37 @@
 import Intro from "@/app/intro.mdx";
 import "./pages.css";
+import { TopBar } from "@/components/TopBar";
 
-// "index.xxx" is keyworded to occupy the "/" branch of whatever folder it's in
-// Since this index file is in the root, it's the homepage
+// Helpful for App Routing structure for Next.js:
+// https://nextjs.org/docs/app/getting-started/project-structure#colocation
 
 export default function Home() {
     return (
-        <>
-            <div
+        <div
+            style={{
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center",
+                justifyContent: "center",
+                gap: "48px",
+                flexWrap: "wrap-reverse",
+                minHeight: "70vh",
+                // padding: "32px",
+            }}
+        >
+            <img
+                src="/profile-stairs.png"
+                alt=""
                 style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    padding: "0px 32px",
+                    aspectRatio: 1,
+                    width: "396px",
+                    maxWidth: "100%",
+                    borderRadius: "16px",
                 }}
-            >
-                <h1>
-                    <a
-                        href="/"
-                        style={{
-                            textDecoration: "none",
-                            color: "var(--primary-accent-color)",
-                        }}
-                    >
-                        Andrew Krier
-                    </a>
-                </h1>
-                <h2>
-                    <a
-                        href="/"
-                        style={{
-                            textDecoration: "none",
-                            color: "var(--secondary-accent-color)",
-                        }}
-                    >
-                        blog
-                    </a>
-                </h2>
+            />
+            <div style={{ width: "100%", maxWidth: "576px" }}>
+                <Intro />
             </div>
-            <div
-                style={{
-                    display: "flex",
-                    flexDirection: "row",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    gap: "48px",
-                    flexWrap: "wrap-reverse",
-                    minHeight: "70vh",
-                }}
-            >
-                <img
-                    src="/profile-stairs.png"
-                    alt=""
-                    style={{
-                        aspectRatio: 1,
-                        width: "396px",
-                        maxWidth: "90%",
-                        borderRadius: "16px",
-                    }}
-                />
-                <div style={{ width: "95%", maxWidth: "432px" }}>
-                    <Intro />
-                </div>
-            </div>
-        </>
+        </div>
     );
 }

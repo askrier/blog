@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 // import "./globals.css";
 import "./pages.css";
 import { Open_Sans, Lemon } from "next/font/google";
+import { TopBar } from "@/components/TopBar";
 
 export const metadata: Metadata = {
     title: "Create Next App",
@@ -28,7 +29,10 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" className={`${openSans.variable} ${lemon.variable}`}>
-            <body>{children}</body>
+            <body style={{ padding: "0px 32px" }}>
+                <TopBar />
+                {children}
+            </body>
         </html>
     );
 }
