@@ -12,7 +12,7 @@ export default function Home() {
                     display: "flex",
                     justifyContent: "space-between",
                     alignItems: "center",
-                    padding: "0px 16px",
+                    padding: "0px 32px",
                 }}
             >
                 <h1>
@@ -59,7 +59,7 @@ export default function Home() {
                         borderRadius: "16px",
                     }}
                 />
-                <div style={{ width: "288px" }}>
+                <div style={{ width: "95%", maxWidth: "432px" }}>
                     <Intro />
                 </div>
             </div>
