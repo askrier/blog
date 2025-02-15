@@ -1,0 +1,37 @@
+:root {
+    --background-color: #ffefda;
+    --body-text-color: #201819;
+    --primary-accent-color: #0043a5;
+    --secondary-accent-color: #de1e35;
+}
+
+body {
+    color: var(--body-text-color);
+    background: var(--background-color);
+    font-family: var(--var-lemon), var(--var-open-sans);
+}
+
+h1 {
+    font-family: var(--var-lemon);
+    color: var(--primary-accent-color);
+}
+
+h2 {
+    font-family: var(--var-lemon);
+    color: var(--secondary-accent-color);
+}
+
+h3 {
+    font-family: var(--var-lemon);
+    color: var(--body-text-color);
+}
+
+p {
+    font-family: var(--var-open-sans);
+    color: var(--body-text-color);
+}
+
+li {
+    font-family: var(--var-open-sans);
+    color: var(--body-text-color);
+}
