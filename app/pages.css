@@ -35,3 +35,22 @@ li {
     font-family: var(--var-open-sans);
     color: var(--body-text-color);
 }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: "16px 16px 16px 16px";
+}
+
+td {
+    font-family: var(--var-open-sans);
+}
+
+td a {
+    color: #0043a5;
+    font-style: oblique;
+}

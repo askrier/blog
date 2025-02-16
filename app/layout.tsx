@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-// import "./globals.css";
 import "./pages.css";
 import { Open_Sans, Lemon } from "next/font/google";
 import { TopBar } from "@/components/TopBar";
