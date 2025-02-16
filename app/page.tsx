@@ -1,6 +1,5 @@
 import Intro from "@/app/intro.mdx";
 import "./pages.css";
-import { TopBar } from "@/components/TopBar";
 
 // Helpful for App Routing structure for Next.js:
 // https://nextjs.org/docs/app/getting-started/project-structure#colocation
@@ -16,7 +15,6 @@ export default function Home() {
                 gap: "48px",
                 flexWrap: "wrap-reverse",
                 minHeight: "70vh",
-                // padding: "32px",
             }}
         >
             <img
