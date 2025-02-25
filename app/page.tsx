@@ -18,7 +18,7 @@ export default function Home() {
             }}
         >
             <img
-                src="profile-stairs.png"
+                src="/profile-stairs.png"
                 alt=""
                 style={{
                     aspectRatio: 1,
