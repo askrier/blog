@@ -8,13 +8,13 @@ export const metadata: Metadata = {
     description: "Really not that much else",
 };
 
-export const openSans = Open_Sans({
+const openSans = Open_Sans({
     subsets: ["latin"],
     variable: "--var-open-sans",
     display: "swap",
 });
 
-export const lemon = Lemon({
+const lemon = Lemon({
     subsets: ["latin"],
     weight: "400",
     variable: "--var-lemon",
