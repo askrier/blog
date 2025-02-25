@@ -6,7 +6,7 @@ export default function NotFoundPage() {
                 flexDirection: "row",
                 alignItems: "center",
                 justifyContent: "center",
-                gap: "48px",
+                gap: "24px",
                 flexWrap: "wrap-reverse",
                 minHeight: "70vh",
             }}
