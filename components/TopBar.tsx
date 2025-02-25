@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const TopBar = () => {
     return (
         <div
@@ -10,7 +12,7 @@ export const TopBar = () => {
             }}
         >
             <h1>
-                <a
+                <Link
                     href="/"
                     style={{
                         textDecoration: "none",
@@ -18,10 +20,10 @@ export const TopBar = () => {
                     }}
                 >
                     Andrew Krier
-                </a>
+                </Link>
             </h1>
             <h2>
-                <a
+                <Link
                     href="/blog"
                     style={{
                         textDecoration: "none",
@@ -29,7 +31,7 @@ export const TopBar = () => {
                     }}
                 >
                     blog
-                </a>
+                </Link>
             </h2>
         </div>
     );
