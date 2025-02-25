@@ -18,4 +18,6 @@ One key learning from that experience was noting that page router and app router
 are two different approaches to making your website. I mostly committed to the
 app router way due to its simple integration with page templates.
 
+I bought the domain on Cloudflare, and am serving this through GitHub Pages
+
 Run development server with `npm run dev`
