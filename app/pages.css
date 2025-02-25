@@ -29,6 +29,27 @@ h3 {
 p {
     font-family: var(--var-open-sans);
     color: var(--body-text-color);
+    line-height: 1.75em;
+}
+
+p a {
+    font-family: var(--var-open-sans);
+    color: var(--body-text-color);
+    font-style: italic;
+}
+
+/* https://stackoverflow.com/questions/1530685/how-can-i-keep-consistent-line-height-with-superscript-elements */
+sup {
+    vertical-align: top;
+    position: relative;
+    top: -0.5em;
+}
+
+p sup a {
+    font-family: var(--var-open-sans);
+    color: var(--body-text-color);
+    font-style: normal;
+    font-size: x-small;
 }
 
 li {
@@ -46,7 +67,7 @@ td {
 }
 
 td a {
-    color: #0043a5;
+    color: var(--primary-accent-color);
     font-style: oblique;
 }
 
@@ -54,4 +75,21 @@ blockquote {
     border-left: 3px solid var(--body-text-color);
     padding-left: 16px;
     font-style: italic;
+}
+
+a.data-footnote-backref {
+    font-style: normal;
+    font-style: oblique;
+    text-decoration: none;
+    color: var(--primary-accent-color);
+}
+
+em {
+    font-size: small;
+    text-align: right;
+}
+
+img {
+    width: 100%;
+    border-radius: 16px;
 }
