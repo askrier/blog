@@ -32,6 +32,12 @@ p {
     line-height: 1.75em;
 }
 
+p em {
+    font-family: var(--var-open-sans);
+    color: var(--body-text-color);
+    line-height: 1.75em;
+}
+
 p a {
     font-family: var(--var-open-sans);
     color: var(--body-text-color);

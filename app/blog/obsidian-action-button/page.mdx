@@ -1,0 +1,66 @@
+# Obsidian Action Button
+
+Recently, I tried to optimize my life ever so slightly, and part of that was
+wanting to take faster notes in my day-to-day. I currently use
+[Obsidian](https://obsidian.md/), and really want to make the
+[Action Button on my iPhone do something useful](https://www.theverge.com/23889013/iphone-15-pro-action-button-programmability-possibility-powerful),
+so it seemed like a smooth marriage. The only issue is that Obsidian doesn't
+have any built-in Shortcut actions, so we did a little engineering.
+
+For fear of emulating an online recipe too much, you can skip to the result
+[here](/blog/obsidian-action-button#actual-shortcut-target)
+
+### What are you talking about?
+
+Obsidian has been my go-to home for personal documentation for the last few
+months. I've really liked its simplicity, with the option for power if you
+really want it. I keep daily journals, todo lists, project plans, and my New
+Year's Bingo on it. I'm even writing this post on Obsidian. I've tried Notion,
+Google Docs, Apple Notes, and even physical paper in the past, but this one has
+stuck around longer than most.
+
+Obsidian itself isn't anything crazy, it's just a thin Markdown wrapper. So
+maybe what I'm saying is I really like Markdown, and Obsidian just provides it
+well.
+
+### Fast Notes
+
+In the fall of 2019 I joined a standup comedy club on campus. It was the club's
+first year of operation and as a sophomore obsessed with Hasan Minhaj's
+Homecoming King I gave it my best shot.
+
+The worst part of writing a standup comedy bit is finally getting the time to
+work on it, then being totally and completely unable to conjure anything
+remotely funny. Funny (subjective) ideas would come to me all the time, why were
+they not simply on hand?
+
+My solution then was to keep an ongoing list of funny things that came up on a
+sprawling Apple Note. It became increasingly hard to parse this note, and with
+that it fell out of use.
+
+This came back around recently when I read Anne Lamott's Bird by Bird. It's a
+book of life and writing advice, and one of the tips of hers was to keep an
+infinite number of index cards around so that an idea never goes to waste.
+"Infinite index cards" seems like a great use for technology, so here we are.
+
+<h3>
+    <a id="actual-shortcut-target">The Actual Shortcut</a>
+</h3>
+
+Here's the
+[iCloud Shortcut link](https://www.icloud.com/shortcuts/6bd3328a7fd64e2ea3587c92e97f14f8),
+and you should be able to copy it from there. It should look like this:
+![](/obsidian-shortcut.png) All you'll need to do to get this to work is change
+the Append action's destination folder (mine is set to "Shortcut Notes") and
+adjust the URL constructor to that same folder.
+
+You can figure out what it should be by making a test file in your app, hitting
+the 3 dots in the top right corner, selecting "Copy Obsidian URL," then taking
+what results without the test file's name. It should end in "%2F."
+
+The last step is to set this as the Action Button's action, which you can do in
+settings.
+
+![](/apple-shortcut-screenshot.jpeg)
+
+That's it! You're done. Go note away :)
